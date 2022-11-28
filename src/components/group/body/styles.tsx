@@ -22,7 +22,6 @@ export const Wrapper = styled.div`
 `;
 
 export const Section = styled.section`
-  margin-top: 30px;
 
   @media ${device.mobileL} {
   }

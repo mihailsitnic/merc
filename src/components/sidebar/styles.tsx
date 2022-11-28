@@ -15,6 +15,7 @@ export const Sidebar = styled.aside`
 
   @media ${device.mobileL} {
     width: 60px;
+    display: none;
   }
 `;
 
@@ -62,9 +63,10 @@ export const A = styled(Link)`
   line-height: 1.43;
   color: ${colors.black};
   position: relative;
+  user-select: none;
 
   &:hover {
-    background: ${colors.grey2};
+    background: ${colors.grey5};
   }
 
   &:before {
@@ -118,11 +120,12 @@ export const Drop = styled.span`
   line-height: 1.43;
   color: ${colors.black};
   position: relative;
+  user-select: none;
 
   &:before {
     content: "";
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
     position: absolute;
     left: 24px;
     top: 50%;
@@ -149,5 +152,31 @@ export const Span = styled.span`
 
   @media ${device.mobileL} {
     display: none;
+  }
+`;
+
+export const GroupList = styled.ul`
+  list-style: none;
+  padding-left: 54px;
+  margin-bottom: 10px;
+
+  @media ${device.mobileL} {
+  }
+`;
+
+export const GroupLi = styled.li`
+  padding: 2px 0;
+
+  @media ${device.mobileL} {
+  }
+`;
+
+export const GroupLink = styled(Link)`
+  color: ${colors.black};
+  font-size: 14px;
+  line-height: 1.43;
+  user-select: none;
+
+  @media ${device.mobileL} {
   }
 `;

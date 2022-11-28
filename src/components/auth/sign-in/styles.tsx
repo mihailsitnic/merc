@@ -52,7 +52,7 @@ export const Forma = styled(Form)`
   justify-content: space-between;
 
   @media ${device.mobileL} {
-    height: 100vh;
+    height: auto;
   }
 `;
 

@@ -181,7 +181,7 @@ export const customStyles = {
   control: (base: any, state: any) => ({
     ...base,
     height: "55px",
-    background: colors.grey2,
+    background: colors.grey5,
     borderRadius: "3px",
     paddingLeft: "10px",
     paddingRight: "30px",
@@ -218,7 +218,7 @@ export const customStyles = {
     backgroundColor: colors.white,
     color: colors.grey1,
     "&:hover": {
-      backgroundColor: colors.grey2,
+      backgroundColor: colors.grey5,
     },
   }),
 };

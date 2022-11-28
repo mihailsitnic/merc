@@ -86,6 +86,10 @@ export const Name = styled.h3`
 export const Inner = styled.div`
   padding-top: 24px;
 
+  &:first-child {
+    padding-top: 0;
+  }
+
   @media ${device.mobileL} {
     padding-top: 16px;
   }

@@ -70,7 +70,7 @@ const arrow = (state: any) => {
     return colors.black;
   }
   if (!state.selectProps.validation && !state.menuIsOpen) {
-    return colors.grey2;
+    return colors.grey3;
   }
   if (!state.selectProps.validation && state.menuIsOpen) {
     return colors.black;
@@ -82,7 +82,6 @@ export const customStyles = {
   control: (base: any, state: any) => ({
     ...base,
     background: background(state),
-    paddingLeft: state.selectProps.noPadding ? "0px" : "25px",
     paddingRight: "30px",
     boxShadow: state.selectProps.validation ? "0 2px 10px 0 rgba(255, 0, 101, 0.15)" : "none",
     border: border(state),

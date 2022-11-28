@@ -94,6 +94,8 @@ const ru: Types = {
   "Date": "Дата",
   "New date": "Новая дата",
   "Change date": "Изменить дату",
+  "Details": "Детали",
+  "Go Back": "Назад",
 };
 
 export default ru;

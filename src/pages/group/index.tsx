@@ -4,7 +4,7 @@ import Loader from "components/reusable/loader";
 const Header = lazy(() => import("components/header"));
 const Body = lazy(() => import("components/group/body"));
 
-function Profile() {
+function Group() {
 	const MainComponent = () => (
 		<Suspense fallback={<Loader />}>
 			<Header />
@@ -15,4 +15,4 @@ function Profile() {
 	return MainComponent();
 }
 
-export default Profile;
+export default Group;

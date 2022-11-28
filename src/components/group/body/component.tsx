@@ -1,5 +1,5 @@
 import React from "react";
-import Table from "components/profile/table";
+import Table from "components/group/table";
 import {
 	Main,
 	Wrapper,

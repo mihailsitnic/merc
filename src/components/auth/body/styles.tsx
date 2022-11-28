@@ -26,8 +26,7 @@ export const SignInBlock = styled.div`
   z-index: 20;
 
   @media ${device.mobileL} {
-    height: 100vh;
-    border-radius: 0;
+    height: auto;
   }
 `;
 

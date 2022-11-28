@@ -1,10 +1,9 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import colors from "theme/colors";
 import device from "theme/device";
 import { Link } from "react-router-dom";
 
 export const Section = styled.div`
-  margin-top: 28px;
   box-shadow: rgb(50 50 50 / 10%) 0px 1px 4px 0px;
   border-radius: 4px;
 

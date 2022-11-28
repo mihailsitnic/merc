@@ -29,6 +29,7 @@ const Component: React.FC<any> = (props) => {
                 errors,
                 touched,
                 values,
+                setFieldValue,
             }) => (
                 <Forma autoComplete="off">
                     <FormBody
@@ -36,6 +37,7 @@ const Component: React.FC<any> = (props) => {
                         isSubmitting={isSubmitting}
                         errors={errors}
                         touched={touched}
+                        sfv={setFieldValue}
                     />
                 </Forma>
             )}

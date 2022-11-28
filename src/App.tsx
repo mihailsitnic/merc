@@ -8,7 +8,7 @@ import Pmeter from "pages/pmeter";
 import Details from "pages/details";
 import Edit from "pages/edit";
 import Search from "pages/search";
-import Profile from "pages/profile";
+import Group from "pages/group";
 import Lang from "pages/lang";
 import Controllers from "./controllers";
 
@@ -30,7 +30,7 @@ function App() {
 				<Route path="/pmeter" component={Pmeter} />
 				<Route path="/edit/:id" component={Edit} />
 				<Route path="/search" component={Search} />
-				<Route path="/profiles" component={Profile} />
+				<Route path="/group/:id" component={Group} />
 				<Route path="/lang" component={Lang} />
 			</Switch>
 			<Controllers />
