@@ -85,3 +85,22 @@ export const Img = styled.img`
   @media ${device.mobileL} {
   }
 `;
+
+export const Back = styled.img`
+  display: flex;
+
+  @media ${device.mobileL} {
+  }
+`;
+
+export const Title = styled.h4`
+  display: flex;
+  margin-left: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  color: ${colors.blue};
+
+  @media ${device.mobileL} {
+  }
+`;
+

@@ -11,7 +11,7 @@ const ItemSubmit: React.FC<any> = (props) => {
             <Button
                 color="blue"
                 type="submit"
-                actve={loader}
+                active={loader}
                 disabled={submitting}
             >
                 {t("Enter")}

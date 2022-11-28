@@ -7,7 +7,6 @@ import { Header, Body, Footer, Title, Name, CloseBtn } from "./styles";
 
 const FormBody: React.FC<any> = (props) => {
     const { sfv, setIsOpen, load, values } = props;
-    const [val, setVal] = useState<any>(new Date());
 
     return (
         <>
@@ -32,7 +31,6 @@ const FormBody: React.FC<any> = (props) => {
                     color="blue"
                     type="submit"
                     active={load}
-                    disabled={!values.status}
                 >
                     {t("Change date")}
                 </Button>

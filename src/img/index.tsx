@@ -18,9 +18,13 @@ import iconAlert from "./icons/alert.svg";
 import iconClose from "./icons/close.svg";
 import iconDelete from "./icons/delete.svg";
 import iconGroupsBlue from "./icons/groups/blue.svg";
+import iconGroupsBlueActive from "./icons/groups/active/blue.svg";
 import iconGroupsOrange from "./icons/groups/orange.svg";
+import iconGroupsOrangeActive from "./icons/groups/active/orange.svg";
 import iconGroupsPink from "./icons/groups/pink.svg";
+import iconGroupsPinkActive from "./icons/groups/active/pink.svg";
 import iconGroupsPurple from "./icons/groups/purple.svg";
+import iconGroupsPurpleActive from "./icons/groups/active/purple.svg";
 import iconArrowLeft from "./icons/arrow-left.svg";
 import iconCalendarDates from "./icons/calendar-dates.svg"
 import iconCalendarArrow from "./icons/arrow-right.svg"
@@ -50,9 +54,13 @@ const img: Types = {
   iconClose,
   iconDelete,
   iconGroupsBlue,
+  iconGroupsBlueActive,
   iconGroupsOrange,
+  iconGroupsOrangeActive,
   iconGroupsPink,
+  iconGroupsPinkActive,
   iconGroupsPurple,
+  iconGroupsPurpleActive,
   iconArrowLeft,
   iconCalendarDates,
   iconCalendarArrow,

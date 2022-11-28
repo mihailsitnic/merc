@@ -9,7 +9,7 @@ const Navigation: React.FC<any> = (props) => {
     const path = history.location.pathname;
 
     const renderNav = () => {
-        const list = data.map((item) => {
+        const list = data.nav.map((item) => {
             const active = item.link === path;
             return (
                 <Li key={item.id}>

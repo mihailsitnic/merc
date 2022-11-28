@@ -13,7 +13,7 @@ export const Section = styled.section`
   padding-bottom: 25px;
 
   @media ${device.mobileL} {
-    height: 100vh;
+    height: auto;
   }
 `;
 

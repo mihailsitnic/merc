@@ -1,4 +1,3 @@
-import UserLink from "./user-link";
 import Actions from "./actions";
 import { t } from "i18next";
 

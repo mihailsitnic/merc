@@ -17,7 +17,7 @@ const SelectDate: React.FC<any> = (props) => {
                 startDate={val}
                 selected={val}
                 minDate={new Date()}
-                dateFormat="dd.MM.yyyy / h:mm"
+                dateFormat="dd.MM.yyyy"
                 locale="ru"
                 placeholderText={t("Select date")}
                 autoComplete="off"

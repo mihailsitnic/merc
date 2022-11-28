@@ -2,9 +2,10 @@ import React from "react";
 import { t } from "i18next";
 import { withRouter } from "react-router-dom";
 import Button from "components/reusable/button";
+import Select from "components/reusable/selector";
+import options from "components/reusable/station-name";
 import {
     Section,
-    Name,
     Inner,
     Label,
     Row,
@@ -16,22 +17,12 @@ import {
 } from "./styles";
 
 const Component: React.FC<any> = (props) => {
-    const { errors, touched, isSubmitting } = props;
+    const { values, errors, touched, isSubmitting, sfv } = props;
+    const opt = options();
 
     return (
         <>
             <Section>
-                <Name>
-                    {t("Station name")} <Sup>*</Sup>
-                </Name>
-                <Input
-                    name="stationName"
-                    validation={
-                        errors.stationName &&
-                        touched.stationName
-                    }
-                />
-
                 <Inner>
                     <Row>
                         <Col>
@@ -136,18 +127,30 @@ const Component: React.FC<any> = (props) => {
                             </Row>
                         </Col>
                         <Col>
-                            <Label {...props} $pd>
-                                {t("Physical Meter Password")} <Sup>*</Sup>
-                            </Label>
-                            <Wrap>
-                                <Input
-                                    name="physicalMeterPassword"
-                                    validation={
-                                        errors.physicalMeterPassword &&
-                                        touched.physicalMeterPassword
-                                    }
-                                />
-                            </Wrap>
+                            <Row>
+                                <Col {...props} width="sm">
+                                    <Label {...props} $pd>
+                                        {t("Physical Meter Password")} <Sup>*</Sup>
+                                    </Label>
+                                    <Wrap>
+                                        <Input
+                                            name="physicalMeterPassword"
+                                            validation={
+                                                errors.physicalMeterPassword &&
+                                                touched.physicalMeterPassword
+                                            }
+                                        />
+                                    </Wrap>
+                                </Col>
+                                <Col {...props} width="sm">
+                                    <Label {...props} $pd>
+                                        {t("Station name")} <Sup>*</Sup>
+                                    </Label>
+                                    <Wrap>
+                                        <Select name="stationName" options={opt} sfv={sfv} defaultValue={values.stationName} />
+                                    </Wrap>
+                                </Col>
+                            </Row>
                         </Col>
                     </Row>
                 </Inner>

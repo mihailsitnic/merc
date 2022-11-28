@@ -67,10 +67,21 @@ const Details: React.FC<any> = (props) => {
                         </Row>
                     </Col>
                     <Col>
-                        <Label {...props} $pd>
-                            {t("Physical Meter Password")}
-                        </Label>
-                        <Value>{data.physicalMeterPassword}</Value>
+                        <Row>
+                            <Col {...props} width="sm">
+                                <Label {...props} $pd>
+                                    {t("Physical Meter Password")}
+                                </Label>
+                                <Value>{data.physicalMeterPassword}</Value>
+                            </Col>
+                            <Col {...props} width="sm">
+                                <Label {...props} $pd>
+                                    {t("Station Name")}
+                                </Label>
+                                <Value>{data.stationName}</Value>
+                            </Col>
+                        </Row>
+
                     </Col>
                 </Row>
             </Inner>

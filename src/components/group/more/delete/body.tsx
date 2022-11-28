@@ -13,7 +13,7 @@ import {
 } from "./styles";
 
 const Body: React.FC<any> = (props) => {
-    const { row, setIsOpen, load } = props;
+    const { setIsOpen, load } = props;
 
     return (
         <>

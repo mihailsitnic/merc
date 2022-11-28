@@ -1,12 +1,10 @@
 import React from "react";
+import Logo from "./logo";
 import Profile from "./profile";
-import img from "img";
 import {
 	Section,
 	Wrapper,
 	Inner,
-	Logo,
-	Img,
 } from "./styles";
 
 const Header: React.FC<any> = () => {
@@ -14,9 +12,7 @@ const Header: React.FC<any> = () => {
 		<Section>
 			<Wrapper>
 				<Inner>
-					<Logo to="/">
-						<Img src={img.logo} alt="logo" />
-					</Logo>
+					<Logo />
 					<Profile />
 				</Inner>
 			</Wrapper>

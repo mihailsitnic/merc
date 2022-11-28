@@ -94,6 +94,8 @@ const en: Types = {
   "Date": "Date",
   "New date": "New date",
   "Change date": "Change date",
+  "Details": "Details",
+  "Go Back": "Go Back",
 }
 
 export default en;

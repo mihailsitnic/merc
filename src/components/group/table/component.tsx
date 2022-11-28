@@ -22,7 +22,7 @@ const Table: React.FC<any> = (props) => {
 
     const filteredData = useMemo(
         () => filterData(data, search),
-        [search]
+        [search, data]
     );
 
     return (
